@@ -2,7 +2,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
+class StrCh implements StringChecker{
 
+  @Override
+  public boolean checkString(String s) {
+    // TODO Auto-generated method stub
+    if (s.length()>5) {
+      return true;
+    }
+    return false;
+  }
+  
+}
 class ListExamples {
 
   // Returns a new list that has all the elements of the input list for which
@@ -16,6 +27,7 @@ class ListExamples {
       }
     }
     return result;
+    
   }
 
 
