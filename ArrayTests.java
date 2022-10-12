@@ -8,7 +8,12 @@ public class ArrayTests {
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
-
+	@Test 
+	public void testReverseInPlaceMulti() {
+    int[] input1 = { 3 ,5,8};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 8,5,3 }, input1);
+	}
 
   @Test
   public void testReversed() {
